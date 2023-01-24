@@ -4,16 +4,34 @@
 
   --color-dark-1: #4c4743;
   --color-dark-2: #3d3935;
+  --color-dark-3: #5d6164;
+
+  --color-light-1-c: #fff;
+  --color-light-2: #f1f1f1;
+  --color-light-3: #d2d2d2;
+  --color-light-4: #bebebe;
+  --color-light-5: #e2e2e2;
+
+  --main-bg-gradient: transparent
+    linear-gradient(180deg, #f3f3f3 0%, #ffffff 11%, #f1f1f1 29%, #f1f1f1 100%)
+    0% 0% no-repeat padding-box;
+
+  --color-brand-1-img: invert(52%) sepia(78%) saturate(2928%) hue-rotate(338deg)
+    brightness(102%) contrast(101%);
+  --color-light-2-img: invert(95%) sepia(0%) saturate(827%) hue-rotate(174deg)
+    brightness(92%) contrast(85%);
+  --color-dark-3-img: invert(36%) sepia(9%) saturate(247%) hue-rotate(163deg)
+    brightness(95%) contrast(83%);
 }
 
 * {
   margin: 0;
   padding: 0;
 }
-body {
-  font-family: "Open Sans", sans-serif;
-}
-
 li {
   list-style: none;
+}
+body {
+  font-family: "Open Sans", sans-serif !important;
+  color: #4c4743 !important;
 }

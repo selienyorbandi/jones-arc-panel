@@ -1,0 +1,6 @@
+.App {
+  margin: 0 60px;
+  background: var(--main-bg-gradient);
+  width: calc(100% - 60px);
+  height: 100vh;
+}

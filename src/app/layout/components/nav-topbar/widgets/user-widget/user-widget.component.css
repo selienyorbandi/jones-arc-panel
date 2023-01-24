@@ -1,0 +1,20 @@
+.UserWidget {
+  color: var(--color-dark-3);
+  font-size: 1.3rem;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background: var(--color-light-2);
+}
+
+.dropdown-item:active {
+  background: var(--color-brand-1);
+}
+.UserWidget__DropdownBtn {
+  filter: var(--color-dark-3-img);
+}
+
+.UserWidget__DropdownBtn:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,11 @@
+.Icon-widget img {
+  filter: var(--color-light-2-img);
+}
+
+.Icon--highlighted img {
+  filter: var(--color-brand-1-img);
+}
+
+.Icon-widget:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,21 @@
+<div class="UserWidget d-flex align-items-center gap-2">
+  <img
+    src="{{ userAvatar }}"
+    alt="{{ userName }}"
+    width="32px"
+    height="32px"
+    class="border"
+  />
+  <div class="align-bottom">{{ userName }}</div>
+  <img
+    src="../../../../../../assets/icon/caret-down-fill.svg"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+    class="UserWidget__DropdownBtn pt-2"
+  />
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">User option #1</a></li>
+    <li><a class="dropdown-item" href="#">User option #2</a></li>
+    <li><a class="dropdown-item" href="#">Log out</a></li>
+  </ul>
+</div>

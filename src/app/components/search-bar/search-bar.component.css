@@ -1,0 +1,40 @@
+.Searchbar {
+  background: var(--color-light-1-c);
+  margin: 0;
+  width: 75vw;
+  height: 31.4px;
+  border: solid 1px var(--color-light-2);
+  border-radius: 1px;
+  color: var(--color-light-3);
+}
+
+.Searchbar input {
+  outline: none;
+  padding-left: 5px !important;
+}
+
+.Searchbar input::placeholder {
+  color: var(--color-light-4);
+  font-size: 12px;
+  opacity: 1;
+}
+
+.Searchbar__Magnify {
+  justify-self: flex-end;
+}
+
+.Searchbar--borderWide {
+  border: solid 1px var(--color-light-3) !important;
+}
+
+@media screen and (min-width: 500px) {
+  .Searchbar {
+    width: 333px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .Searchbar {
+    width: 40vw;
+  }
+}

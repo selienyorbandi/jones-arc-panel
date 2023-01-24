@@ -1,0 +1,15 @@
+.SectionTitle {
+  gap: 1rem;
+  padding-left: 5px;
+}
+
+.SectionTitle__Square {
+  width: 30px;
+  height: 30px;
+  background: var(--color-light-5);
+}
+
+.SectionTitle h2 {
+  margin: 0;
+  font-size: 22px;
+}

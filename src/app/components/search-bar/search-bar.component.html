@@ -1,0 +1,31 @@
+<div
+  class="Searchbar container align-self-auto"
+  [ngClass]="hasCaretDown ? '' : 'Searchbar--borderWide'"
+>
+  <div
+    class="row d-flex align-items-center"
+    [ngClass]="hasCaretDown ? '' : 'px-2 pe-1'"
+  >
+    <div class="col-1 d-flex p-1 pt-2" *ngIf="hasCaretDown">
+      <img
+        src="../../../../assets/icon/caret-down-fill.svg"
+        alt="Expand search results"
+        width="18px"
+        height="18px"
+      />
+    </div>
+    <input
+      type="text"
+      placeholder="{{ placeholderTxt }}"
+      class="col border-0"
+    />
+    <div class="Searchbar__Magnify col-1 p-1 d-flex justify-content-end">
+      <img
+        src="../../../../assets/icon/search.svg"
+        alt="Search"
+        width="18px"
+        height="18px"
+      />
+    </div>
+  </div>
+</div>

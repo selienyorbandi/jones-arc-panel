@@ -1,5 +1,7 @@
-<nav class="MainSidebar">
-  <div class="MainSidebar__Brand">
+<nav class="MainSidebar position-fixed d-flex flex-column">
+  <div
+    class="MainSidebar__Brand d-flex justify-content-center align-items-center"
+  >
     <img
       src="../../../../assets/img/brand.png"
       width="40px"
@@ -7,75 +9,40 @@
       alt="Brand logo"
     />
   </div>
-  <ul class="MainSidebar__Links p-0">
-    <li title="page-1">
-      <a [routerLink]="'page-a'" routerLinkActive="MainSidebar__Link--active">
-        <img
-          src="../../../../assets/icon/building-fill.svg"
-          alt="Go to A"
-          width="21px"
-          height="21px"
-        />
-      </a>
-    </li>
-    <li title="page-b">
-      <a [routerLink]="'page-b'" routerLinkActive="MainSidebar__Link--active"
-        ><img
-          src="../../../../assets/icon/graph-up-arrow.svg"
-          alt="Go to B"
-          width="21px"
-          height="auto"
-      /></a>
-    </li>
-    <li title="page-c">
-      <a [routerLink]="'page-c'" routerLinkActive="MainSidebar__Link--active"
-        ><img
-          src="../../../../assets/icon/pencil-ruler.svg"
-          alt="Go to C"
-          width="21px"
-          height="auto"
-      /></a>
-    </li>
-    <li title="page-d">
-      <a [routerLink]="'page-d'" routerLinkActive="MainSidebar__Link--active"
-        ><img
-          src="../../../../assets/icon/admintype.webp"
-          alt="Go to D"
-          width="21px"
-          height="auto"
-      /></a>
-    </li>
-    <li title="page-e">
-      <a [routerLink]="'page-e'" routerLinkActive="MainSidebar__Link--active"
-        ><img
-          src="../../../../assets/icon/clock-fill.svg"
-          alt="Go to E"
-          width="21px"
-          height="auto"
-      /></a>
-    </li>
-    <li title="page-f">
-      <a [routerLink]="'page-f'" routerLinkActive="MainSidebar__Link--active"
-        ><img
-          src="../../../../assets/icon/bar-chart-line-fill.svg"
-          alt="Go to F"
-          width="21px"
-          height="auto"
-      /></a>
-    </li>
-    <li title="current-page-in-adobe-xd">
-      <a
-        [routerLink]="'current-page-in-adobe-xd'"
-        routerLinkActive="MainSidebar__Link--active"
-        ><img
-          src="../../../../assets/icon/tachometer.svg"
-          alt="Go to G"
-          width="21px"
-          height="auto"
-      /></a>
-    </li>
+  <ul class="MainSidebar__Links p-0 d-flex flex-column align-items-center">
+    <app-menu-item
+      [routerHref]="'page-a'"
+      [iconSrc]="'../../../../assets/icon/building-fill.svg'"
+    ></app-menu-item>
+    <app-menu-item
+      [routerHref]="'page-b'"
+      [iconSrc]="'../../../../assets/icon/graph-up-arrow.svg'"
+    ></app-menu-item>
+    <app-menu-item
+      [routerHref]="'page-c'"
+      [iconSrc]="'../../../../assets/icon/pencil-ruler.svg'"
+    ></app-menu-item>
+    <app-menu-item
+      [routerHref]="'page-d'"
+      [iconSrc]="'../../../../assets/icon/admintype.webp'"
+    ></app-menu-item>
+    <app-menu-item
+      [routerHref]="'page-e'"
+      [iconSrc]="'../../../../assets/icon/clock-fill.svg'"
+    ></app-menu-item>
+    <app-menu-item
+      [routerHref]="'page-f'"
+      [iconSrc]="'../../../../assets/icon/bar-chart-line-fill.svg'"
+    ></app-menu-item>
+    <app-menu-item
+      [routerHref]="'current-page-in-adobe-xd'"
+      [iconSrc]="'../../../../assets/icon/tachometer.svg'"
+    ></app-menu-item>
   </ul>
-  <div class="MainSidebar__ExpandBtn" title="Expand sidebar">
+  <div
+    class="MainSidebar__ExpandBtn position-absolute align-self-center"
+    title="Expand sidebar"
+  >
     <img
       src="../../../../assets/icon/arrow-right-short.svg"
       width="40px"

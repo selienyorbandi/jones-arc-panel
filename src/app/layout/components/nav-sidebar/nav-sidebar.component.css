@@ -1,57 +1,21 @@
 .MainSidebar {
   background: var(--color-dark-1);
-  position: fixed;
   left: 0;
   width: 60px;
   height: 100%;
-  display: flex;
-  flex-direction: column;
+  z-index: 1150;
 }
 
 .MainSidebar__Brand {
   background: var(--color-brand-1);
   height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .MainSidebar__Links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 1rem;
 }
 
-.MainSidebar li {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 55px;
-  width: 100%;
-}
-
-.MainSidebar li a {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.MainSidebar__Link--active {
-  background: var(--color-dark-2);
-}
-
-.MainSidebar__Link--active img {
-  filter: invert(52%) sepia(78%) saturate(2928%) hue-rotate(338deg)
-    brightness(102%) contrast(101%);
-}
-
 .MainSidebar__ExpandBtn {
-  align-self: center;
-  position: absolute;
   bottom: 15px;
 }
 .MainSidebar__ExpandBtn:hover {
