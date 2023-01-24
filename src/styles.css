@@ -1,0 +1,19 @@
+:root {
+  --color-brand-1: #ff6537;
+  --color-brand-2: #eb4716;
+
+  --color-dark-1: #4c4743;
+  --color-dark-2: #3d3935;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+li {
+  list-style: none;
+}
