@@ -1,0 +1,23 @@
+.CommentForm {
+  font-size: 12px;
+}
+.CommentForm__Input {
+  border: solid 1px var(--color-light-6);
+}
+.CommentForm__Input::placeholder {
+  font-style: italic;
+  font-size: 12px;
+  opacity: 1;
+  color: var(--color-light-4);
+}
+
+.CommentForm__Input:active,
+.CommentForm__Input:focus {
+  outline: solid 1px var(--color-dark-3);
+}
+
+.CommentForm__Button {
+  background: none;
+  border: solid 1px var(--color-light-6);
+  color: var(--color-dark-1);
+}

@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { SpinnerComponent } from "./spinner.component";
+import { FilterWidgetComponent } from "./filter-widget.component";
 
-describe("SpinnerComponent", () => {
-  let component: SpinnerComponent;
-  let fixture: ComponentFixture<SpinnerComponent>;
+describe("FilterWidgetComponent", () => {
+  let component: FilterWidgetComponent;
+  let fixture: ComponentFixture<FilterWidgetComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SpinnerComponent]
+      declarations: [FilterWidgetComponent]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(SpinnerComponent);
+    fixture = TestBed.createComponent(FilterWidgetComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

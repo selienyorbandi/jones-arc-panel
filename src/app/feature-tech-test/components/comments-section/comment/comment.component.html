@@ -1,0 +1,59 @@
+<li
+  *ngIf="comment"
+  class="container Comment d-flex flex-column gap-3 py-3 px-3"
+>
+  <div class="row gap-3 Comment__Header">
+    <div class="col-1">
+      <!-- The json provided does not contain pictures -->
+      <img
+        src="https://acornls.com/wp-content/uploads/2020/01/avatar-placeholder-generic-e1626901971353.jpg"
+        alt="{{ comment.author }}"
+        width="30px"
+        height="30px"
+      />
+    </div>
+    <div class="col-auto d-flex flex-column gap-0 Comment__Header__Data">
+      <h4 class="p-0 m-0">{{ comment.author }}</h4>
+      <p>
+        {{
+          (comment.date | date : "mediumDate") +
+            ", " +
+            (comment.date | date : "shortTime")
+        }}
+      </p>
+    </div>
+    <div class="col position-relative">
+      <div
+        class="Comment__Actions Comment__Actions--topright position-absolute"
+      >
+        Resolve
+      </div>
+    </div>
+  </div>
+  <div class="row Comment__Content">
+    <p class="col py-0 mb-0">
+      {{ comment.comment }}
+    </p>
+  </div>
+  <div class="row">
+    <div class="col d-flex justify-content-between align-content-between">
+      <div class="Comment__Actions fw-bold opacity-100">Reply</div>
+      <div class="d-flex gap-3">
+        <img
+          src="../../../../../assets/icon/pencil-fill.svg"
+          alt="Edit comment"
+          width="12px"
+          height="12px"
+          class="Comment__Actions"
+        />
+        <img
+          src="../../../../../assets/icon/trash3.svg"
+          alt="Delete comment"
+          width="12px"
+          height="12px"
+          class="Comment__Actions"
+        />
+      </div>
+    </div>
+  </div>
+</li>

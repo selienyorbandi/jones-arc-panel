@@ -1,3 +1,8 @@
+.NavbarTop {
+  z-index: 1050;
+  margin-left: 60px;
+}
+
 .NavbarTop__r1 {
   height: 45px;
   background: var(--color-light-1-c);

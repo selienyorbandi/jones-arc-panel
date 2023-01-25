@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { SpinnerComponent } from "./spinner.component";
+import { CommentFormComponent } from "./comment-form.component";
 
-describe("SpinnerComponent", () => {
-  let component: SpinnerComponent;
-  let fixture: ComponentFixture<SpinnerComponent>;
+describe("CommentFormComponent", () => {
+  let component: CommentFormComponent;
+  let fixture: ComponentFixture<CommentFormComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SpinnerComponent]
+      declarations: [CommentFormComponent]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(SpinnerComponent);
+    fixture = TestBed.createComponent(CommentFormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

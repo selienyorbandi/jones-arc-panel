@@ -1,0 +1,13 @@
+.NavAltSide {
+  width: 45px;
+  height: calc(100% - 130px);
+  border: none;
+  border-left: solid 1px var(--color-light-6);
+  background: var(--color-light-1-c);
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  z-index: 1020;
+}

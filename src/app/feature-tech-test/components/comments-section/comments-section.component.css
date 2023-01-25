@@ -1,0 +1,35 @@
+.CommentSection {
+  max-width: 367px;
+  height: 100%;
+  min-height: 100%;
+  max-height: calc(100vh - 130px);
+  background: var(--color-light-1-c);
+  overflow-y: hidden;
+}
+
+/* -- Scrollbar -- */
+.CommentSection__CommentList {
+  overflow-y: scroll;
+  height: calc(100% - 85px);
+}
+
+/* Firefox */
+.CommentSection__CommentList {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-dark-1) transparent;
+}
+
+/* Chrome, Edge, and Safari */
+.CommentSection__CommentList::-webkit-scrollbar {
+  width: 6px;
+  height: 100px;
+}
+
+.CommentSection__CommentList::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.CommentSection__CommentList::-webkit-scrollbar-thumb {
+  background-color: var(--color-dark-1);
+  border-radius: 10px;
+}

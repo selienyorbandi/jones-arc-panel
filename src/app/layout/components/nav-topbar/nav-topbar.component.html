@@ -1,40 +1,38 @@
 <nav class="NavbarTop container-fluid position-fixed">
-  <div>
-    <div
-      class="NavbarTop__r1 row align-items-center justify-content-xs-evenly gap-2"
-    >
-      <h1 class="col-4 fw-bold">Jones Arc.</h1>
-      <div class="col d-flex flex-row justify-content-evenly pe-5">
-        <app-search-bar
-          [hasCaretDown]="true"
-          placeholderTxt="Search projects, clients, staff and more"
-        ></app-search-bar>
-        <div class="d-flex gap-4">
-          <app-icon-widget
-            imgSrc="../../../../assets/icon/plus-circle-wide.svg"
-            title="Add something"
-            [isHighlighted]="true"
-            class="d-flex align-items-center"
-          ></app-icon-widget>
-          <app-icon-widget
-            imgSrc="../../../../assets/icon/clock.svg"
-            title="View schedule"
-            class="d-flex align-items-center"
-          ></app-icon-widget>
-        </div>
-        <app-user-widget></app-user-widget>
+  <div
+    class="NavbarTop__r1 row align-items-center justify-content-xs-evenly gap-2"
+  >
+    <h1 class="col-4 fw-bold">Jones Arc.</h1>
+    <div class="col d-flex flex-row justify-content-evenly pe-5">
+      <app-search-bar
+        [hasCaretDown]="true"
+        placeholderTxt="Search projects, clients, staff and more"
+      ></app-search-bar>
+      <div class="d-flex gap-4">
         <app-icon-widget
-          imgSrc="../../../../assets/icon/question-circle.svg"
-          title="Help"
+          imgSrc="../../../../assets/icon/plus-circle-wide.svg"
+          title="Add something"
+          [isHighlighted]="true"
+          class="d-flex align-items-center"
+        ></app-icon-widget>
+        <app-icon-widget
+          imgSrc="../../../../assets/icon/clock.svg"
+          title="View schedule"
           class="d-flex align-items-center"
         ></app-icon-widget>
       </div>
+      <app-user-widget></app-user-widget>
+      <app-icon-widget
+        imgSrc="../../../../assets/icon/question-circle.svg"
+        title="Help"
+        class="d-flex align-items-center"
+      ></app-icon-widget>
     </div>
-    <div class="NavbarTop__r2 row">
-      <app-breadcrumb></app-breadcrumb>
-    </div>
-    <div class="NavbarTop__r3 row align-content-center">
-      <app-section-title></app-section-title>
-    </div>
+  </div>
+  <div class="NavbarTop__r2 row">
+    <app-breadcrumb></app-breadcrumb>
+  </div>
+  <div class="NavbarTop__r3 row align-content-center">
+    <app-section-title></app-section-title>
   </div>
 </nav>

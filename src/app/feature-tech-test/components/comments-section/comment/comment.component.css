@@ -1,0 +1,34 @@
+.Comment__Header h4,
+.Comment__Actions {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.Comment__Header p {
+  font-size: 11px;
+}
+
+.Comment__Header__Data {
+  height: 30px;
+}
+
+.Comment__Content {
+  font-size: 12px;
+  padding-right: 15px;
+}
+
+.Comment:hover {
+  background: var(--color-light-8);
+}
+
+.Comment__Actions {
+  opacity: 0;
+  cursor: pointer;
+}
+.Comment:hover .Comment__Actions {
+  opacity: 1;
+}
+
+.Comment__Actions--topright {
+  right: 15px;
+}

@@ -1,0 +1,18 @@
+<div
+  class="AltBarWidget d-flex align-items-center justify-content-center"
+  [ngClass]="isSelected ? 'AltBarWidget--selected' : ''"
+>
+  <div class="position-relative">
+    <img
+      src="../../../../../../assets/icon/chat-left-fill.svg"
+      alt="View comments"
+      height="15px"
+      width="15px"
+    />
+    <span
+      *ngIf="messagesQuantity > 0"
+      class="badge CommentWidget__Number position-absolute d-flex justify-content-center align-items-center"
+      >{{ messagesQuantity }}</span
+    >
+  </div>
+</div>

@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { SpinnerComponent } from "./spinner.component";
+import { NavAltSideComponent } from "./nav-alt-side.component";
 
-describe("SpinnerComponent", () => {
-  let component: SpinnerComponent;
-  let fixture: ComponentFixture<SpinnerComponent>;
+describe("NavAltSideComponent", () => {
+  let component: NavAltSideComponent;
+  let fixture: ComponentFixture<NavAltSideComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SpinnerComponent]
+      declarations: [NavAltSideComponent]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(SpinnerComponent);
+    fixture = TestBed.createComponent(NavAltSideComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,5 +1,5 @@
 import { catchError, tap, throwError } from "rxjs";
-import { StrategyMapsService } from "./../services/strategy-maps.service.service";
+import { StrategyMapsService } from "../services/strategy-maps.service";
 import { Component, OnInit } from "@angular/core";
 
 @Component({
@@ -17,11 +17,6 @@ export class FeatureTechTestComponent implements OnInit {
       .getAllStrategyMapsData()
       .pipe(
         tap(res => {
-          if (res) {
-            console.log("exito", res);
-          } else {
-            console.log("nada", res);
-          }
           this.isLoading = false;
           return res;
         }),

@@ -1,0 +1,20 @@
+.AltBarWidget {
+  width: 33px;
+  height: 33px;
+}
+
+.AltBarWidget--selected {
+  background: var(--color-light-7);
+  border-radius: 3px;
+}
+
+.CommentWidget__Number {
+  background: var(--color-brand-1);
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  font-size: 9px;
+  top: -3px;
+  right: -6px;
+  border: solid 1px var(--color-light-1-c);
+}

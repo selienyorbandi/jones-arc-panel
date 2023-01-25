@@ -1,6 +1,6 @@
-import { IObjective } from "./../models/objective.interface";
-import { IComment } from "./../models/comment.interface";
-import { IPerspective } from "./../models/perspective.interface";
+import { IObjective } from "../models/objective.interface";
+import { IComment } from "../models/comment.interface";
+import { IPerspective } from "../models/perspective.interface";
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs";

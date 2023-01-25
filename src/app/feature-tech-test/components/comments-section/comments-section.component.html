@@ -1,0 +1,8 @@
+<article *ngIf="isCommentsSectionOpen" class="CommentSection py-3">
+  <app-comment-form class="p-2"></app-comment-form>
+  <div class="CommentSection__CommentList">
+    <ol *ngFor="let comment of comments" class="p-0 m-0 pt-2">
+      <app-comment [comment]="comment"></app-comment>
+    </ol>
+  </div>
+</article>
