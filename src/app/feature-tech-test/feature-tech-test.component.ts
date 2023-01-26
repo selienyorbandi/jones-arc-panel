@@ -57,14 +57,7 @@ export class FeatureTechTestComponent implements OnInit {
               }
             },
             fixedHeader: true,
-            search: true,
-            plugins: [
-              {
-                id: "myplugin",
-                component: h(() => h("h1", {}, "Hello world!"), {}),
-                position: PluginPosition.Footer
-              }
-            ]
+            search: true
           };
 
           return res;
