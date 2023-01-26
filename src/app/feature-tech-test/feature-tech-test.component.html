@@ -1,7 +1,10 @@
-<app-spinner *ngIf="isLoading"></app-spinner>
-<div class="row">
-  <div class="col">
-    <div></div>
+<div class="FeatureTechTest">
+  <div class="FeatureTechTest__ColA">
+    <gridjs-angular
+      [config]="gridConfig"
+      *ngIf="objectivesData.length"
+      [autoWidth]="true"
+    ></gridjs-angular>
   </div>
-  <div class="col-auto"><app-comments-section></app-comments-section></div>
+  <app-comments-section class="FeatureTechTest__ColB"></app-comments-section>
 </div>

@@ -14,7 +14,8 @@ import { PagesModule } from "./pages/pages.module";
     LayoutModule,
     PagesModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

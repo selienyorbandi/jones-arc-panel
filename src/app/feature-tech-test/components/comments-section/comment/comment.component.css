@@ -1,6 +1,6 @@
 .Comment__Header h4,
 .Comment__Actions {
-  font-size: 12px;
+  font-size: 0.9rem;
   font-weight: 700;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .Comment__Content {
-  font-size: 12px;
+  font-size: 0.9rem;
   padding-right: 15px;
 }
 

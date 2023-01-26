@@ -1,0 +1,12 @@
+.FeatureTechTest {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-basis: content;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-left: 1rem;
+}
+.FeatureTechTest__ColA {
+  width: 100%;
+}

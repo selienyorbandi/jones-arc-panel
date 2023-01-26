@@ -12,6 +12,7 @@ import { SectionTitleComponent } from "./components/nav-topbar/widgets/section-t
 import { NavAltSideComponent } from "./components/nav-alt-side/nav-alt-side.component";
 import { FilterWidgetComponent } from "./components/nav-alt-side/widgets/filter-widget/filter-widget.component";
 import { CommentsWidgetComponent } from "./components/nav-alt-side/widgets/comments-widget/comments-widget.component";
+import { LayoutComponent } from "./layout.component";
 
 @NgModule({
   declarations: [
@@ -24,14 +25,16 @@ import { CommentsWidgetComponent } from "./components/nav-alt-side/widgets/comme
     SectionTitleComponent,
     NavAltSideComponent,
     FilterWidgetComponent,
-    CommentsWidgetComponent
+    CommentsWidgetComponent,
+    LayoutComponent
   ],
   imports: [CommonModule, RouterModule, SearchBarComponent],
   exports: [
     NavSidebarComponent,
     NavTopbarComponent,
     NavAltSideComponent,
-    CommentsWidgetComponent
+    CommentsWidgetComponent,
+    LayoutComponent
   ]
 })
 export class LayoutModule {}

@@ -6,6 +6,7 @@ import { FeatureTechTestRoutingModule } from "./feature-tech-test-routing.module
 import { SpinnerComponent } from "../components/spinner/spinner.component";
 import { CommentsSectionComponent } from "./components/comments-section/comments-section.component";
 import { CommentFormComponent } from "./components/comments-section/comment-form/comment-form.component";
+import { GridJsAngularModule } from "gridjs-angular";
 
 @NgModule({
   declarations: [
@@ -14,6 +15,11 @@ import { CommentFormComponent } from "./components/comments-section/comment-form
     CommentFormComponent,
     CommentComponent
   ],
-  imports: [CommonModule, FeatureTechTestRoutingModule, SpinnerComponent]
+  imports: [
+    CommonModule,
+    FeatureTechTestRoutingModule,
+    SpinnerComponent,
+    GridJsAngularModule
+  ]
 })
 export class FeatureTechTestModule {}

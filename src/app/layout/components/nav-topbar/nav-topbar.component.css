@@ -1,6 +1,9 @@
 .NavbarTop {
-  z-index: 1050;
-  margin-left: 60px;
+  position: fixed;
+  z-index: 1140;
+  top: 0;
+  left: 60px;
+  width: calc(100vw - 60px);
 }
 
 .NavbarTop__r1 {
@@ -10,7 +13,7 @@
 .NavbarTop__r1 h1 {
   font-size: 20px;
   padding: 12px;
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 .NavbarTop__r2 {
