@@ -41,10 +41,6 @@
 }
 .gridjs-footer {
   background-color: #fff;
-  border-bottom-width: 1px;
-  border-color: #e5e7eb;
-  border-top: 1px solid #e5e7eb;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.26);
   display: block;
   padding: 12px 24px;
   position: relative;
@@ -255,9 +251,7 @@ th.gridjs-th:last-child {
 .gridjs-wrapper {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  border-color: #e5e7eb;
   border-top-width: 1px;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.26);
   display: block;
   overflow: auto;
   position: relative;
@@ -273,7 +267,6 @@ th.gridjs-th:last-child {
 
 .gridjs-search-input {
   width: 250px;
-  border: solid 1px var(--color-light-4) !important;
   height: 35px;
 }
 
@@ -330,6 +323,7 @@ th.gridjs-th:last-child {
   align-items: center;
   gap: 8px;
   width: 142px;
+  height: 30px;
   cursor: pointer;
 }
 
@@ -348,6 +342,7 @@ th.gridjs-th:last-child {
 .add-kpi-container__caret img {
   width: 14px;
   height: 100%;
+  filter: brightness(10);
 }
 
 .square-btn {
@@ -357,11 +352,6 @@ th.gridjs-th:last-child {
   font-size: 12px;
 }
 
-.square-btn:hover {
-  color: #fff;
-}
-
 .add-kpi-container__caret {
   padding: 4px;
-  filter: brightness(10);
 }

@@ -1,3 +1,4 @@
+import { SearchBarComponent } from "./../components/search-bar/search-bar.component";
 import { CommentComponent } from "./components/comments-section/comment/comment.component";
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
@@ -19,7 +20,8 @@ import { GridJsAngularModule } from "gridjs-angular";
     CommonModule,
     FeatureTechTestRoutingModule,
     SpinnerComponent,
-    GridJsAngularModule
+    GridJsAngularModule,
+    SearchBarComponent
   ]
 })
 export class FeatureTechTestModule {}

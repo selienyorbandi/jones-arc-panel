@@ -1,6 +1,7 @@
-<div
+<form
   class="Searchbar container align-self-auto"
   [ngClass]="hasCaretDown ? '' : 'Searchbar--borderWide'"
+  (ngSubmit)="search()"
 >
   <div
     class="row d-flex align-items-center"
@@ -18,6 +19,8 @@
       type="text"
       placeholder="{{ placeholderTxt }}"
       class="col border-0"
+      [(ngModel)]="keywords"
+      name="keywords"
     />
     <div class="Searchbar__Magnify col-1 p-1 d-flex justify-content-end">
       <img
@@ -28,4 +31,4 @@
       />
     </div>
   </div>
-</div>
+</form>

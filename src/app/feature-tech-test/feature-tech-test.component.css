@@ -10,3 +10,35 @@
 .FeatureTechTest__ColA {
   width: 100%;
 }
+
+.FeatureTechTest__TableWrapper {
+  background: var(--color-light-1-c);
+  box-shadow: 0px 3px 3px #0000004d;
+}
+
+.FeatureTechTest__Header {
+  background: var(--color-light-2);
+  display: flex;
+  gap: 1rem;
+  color: var(--color-brand-1);
+  position: relative;
+}
+
+.FeatureTechTest__Header li {
+  font-weight: 600;
+  padding: 20px;
+  cursor: pointer;
+  height: 100%;
+}
+
+.FeatureTechTest__Header--selected {
+  background: var(--color-light-1-c);
+  color: var(--color-dark-5);
+  border: solid 3px white;
+  position: relative;
+  z-index: 1060;
+  border: solid 1px var(--color-light-6);
+  border-bottom: none;
+  height: 100%;
+  padding: 20px 30px !important;
+}

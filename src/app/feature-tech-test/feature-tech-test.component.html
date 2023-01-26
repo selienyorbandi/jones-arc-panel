@@ -1,10 +1,60 @@
 <div class="FeatureTechTest">
   <div class="FeatureTechTest__ColA">
-    <gridjs-angular
-      [config]="gridConfig"
-      *ngIf="objectivesData.length"
-      [autoWidth]="true"
-    ></gridjs-angular>
+    <div class="d-flex gap-2 py-4">
+      <button class="add-kpi-container border-0">
+        <div class="add-kpi-container__plus">
+          <img src="../../assets/icon/plus-lg.svg" alt="Add" width="16px" />
+        </div>
+        <span class="square-btn">Add New KPI</span>
+        <div class="add-kpi-container__caret">
+          <img
+            src="../../assets/icon/caret-down-fill.svg"
+            alt=""
+            width="16px"
+          />
+        </div>
+      </button>
+      <app-search-bar [hasCaretDown]="false" class="w-50"></app-search-bar>
+    </div>
+    <div class="FeatureTechTest__TableWrapper">
+      <ul class="FeatureTechTest__Header">
+        <li
+          (click)="selectSetOfData('perspectives')"
+          [ngClass]="
+            selectedSetOfData == 'perspectives'
+              ? 'FeatureTechTest__Header--selected'
+              : ''
+          "
+        >
+          Perspectives
+        </li>
+        <li
+          (click)="selectSetOfData('objectives')"
+          [ngClass]="
+            selectedSetOfData == 'objectives'
+              ? 'FeatureTechTest__Header--selected'
+              : ''
+          "
+        >
+          Objetives
+        </li>
+        <li
+          (click)="selectSetOfData('kpis')"
+          [ngClass]="
+            selectedSetOfData == 'kpis'
+              ? 'FeatureTechTest__Header--selected'
+              : ''
+          "
+        >
+          KPIs
+        </li>
+      </ul>
+      <gridjs-angular
+        [config]="gridConfig"
+        *ngIf="objectivesData.length"
+        [autoWidth]="true"
+      ></gridjs-angular>
+    </div>
   </div>
   <app-comments-section class="FeatureTechTest__ColB"></app-comments-section>
 </div>
