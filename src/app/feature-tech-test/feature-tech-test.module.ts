@@ -8,13 +8,17 @@ import { SpinnerComponent } from "../components/spinner/spinner.component";
 import { CommentsSectionComponent } from "./components/comments-section/comments-section.component";
 import { CommentFormComponent } from "./components/comments-section/comment-form/comment-form.component";
 import { GridJsAngularModule } from "gridjs-angular";
+import { AddKpiBtnComponent } from "./components/add-kpi-btn/add-kpi-btn.component";
+import { SectionSelectorsComponent } from "./components/section-selectors/section-selectors.component";
 
 @NgModule({
   declarations: [
     FeatureTechTestComponent,
     CommentsSectionComponent,
     CommentFormComponent,
-    CommentComponent
+    CommentComponent,
+    AddKpiBtnComponent,
+    SectionSelectorsComponent
   ],
   imports: [
     CommonModule,

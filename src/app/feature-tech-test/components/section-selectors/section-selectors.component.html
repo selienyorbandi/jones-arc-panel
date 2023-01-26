@@ -1,0 +1,30 @@
+<ul class="FeatureTechTest__Header">
+  <li
+    (click)="selectSetOfData('perspectives')"
+    [ngClass]="
+      selectedSetOfData == 'perspectives'
+        ? 'FeatureTechTest__Header--selected'
+        : ''
+    "
+  >
+    Perspectives
+  </li>
+  <li
+    (click)="selectSetOfData('objectives')"
+    [ngClass]="
+      selectedSetOfData == 'objectives'
+        ? 'FeatureTechTest__Header--selected'
+        : ''
+    "
+  >
+    Objetives
+  </li>
+  <li
+    (click)="selectSetOfData('kpis')"
+    [ngClass]="
+      selectedSetOfData == 'kpis' ? 'FeatureTechTest__Header--selected' : ''
+    "
+  >
+    KPIs
+  </li>
+</ul>
