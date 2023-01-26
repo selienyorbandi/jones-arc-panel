@@ -13,7 +13,7 @@ export function adaptObjective(objective: IObjective) {
       description: html(slicedDescription),
       perspective: objective.perspective,
       "...": html(
-        "<button class='border py-1 px-2' style='background: none'><img src='../../assets/icon/three-dots.svg'/>"
+        "<button class='border py-1 px-2' style='background: none'><img src='../../assets/icon/three-dots.svg' width='16px' height='16px' alt='View more...'/>"
       )
     };
   } else {

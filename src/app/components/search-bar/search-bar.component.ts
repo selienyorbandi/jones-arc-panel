@@ -19,7 +19,8 @@ export class SearchBarComponent {
 
   search() {
     this.router.navigate(["/current-page-in-adobe-xd"], {
-      queryParams: { q: this.keywords }
+      queryParams: { q: this.keywords },
+      queryParamsHandling: "merge"
     });
   }
 }

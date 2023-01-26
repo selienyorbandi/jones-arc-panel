@@ -6,12 +6,16 @@
     </div>
     <div class="FeatureTechTest__TableWrapper">
       <app-section-selectors
-        [selectSetOfData]="selectSetOfData"
         [selectedSetOfData]="selectedSetOfData"
+        [selectSetOfData]="selectSetOfData"
+        (changeDataSelectedEvent)="changeSelectedSetOfData($event)"
       ></app-section-selectors>
+      <div class="d-flex align-content-center justify-content-center">
+        <app-spinner *ngIf="isLoading"></app-spinner>
+      </div>
       <gridjs-angular
         [config]="gridConfig"
-        *ngIf="objectivesData.length"
+        *ngIf="objectivesData.length || perspectivesData.length"
         [autoWidth]="true"
       ></gridjs-angular>
     </div>
